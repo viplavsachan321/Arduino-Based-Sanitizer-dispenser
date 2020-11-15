@@ -1,0 +1,19 @@
+void setup(){ 
+pinMode(8,INPUT);
+pinMode(6,OUTPUT);
+
+}
+
+void loop()
+{
+ if(8 == HIGH)
+ {
+   digitalWrite(6,HIGH);
+   delay(250);
+   digitalWrite(6,LOW);
+   if(8 == HIGH)
+   {
+    DigitalWrite(6,LOW);
+    delay(200);
+   }
+ }  
